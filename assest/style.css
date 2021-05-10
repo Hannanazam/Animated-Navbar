@@ -1,0 +1,175 @@
+body{
+    background-color: #ef993f !important;
+}
+#navbar{
+    margin: 0px auto !important;
+    position: absolute !important;
+    top: 100px !important;
+    left: 100px !important;
+    z-index: 1;
+}
+
+.inlineelements{
+   display: inline-flex;
+   height: 90px !important;
+   background-color: #fff !important;
+}
+.inlineelements img{
+    margin: auto 0px !important;
+    padding: 10px !important;
+    border-right: 1px solid lightgray !important;
+}
+.inlineelements .setitem img{
+    font-size: 1.5rem !important; 
+    border: 0px !important;
+    padding: 34px 40px !important;
+}
+
+.inlineelements .setitem{
+    margin: auto 0px !important;
+    cursor: pointer;
+    padding: 0px 40px !important;
+}
+.sidenav{
+    width: 0;
+    position: relative;
+    background-color: #fff !important;
+    overflow: hidden;
+    transition: 0.5s;
+    display: inline;
+}
+.sidenav ul{
+    margin: 30px 0px !important;
+    padding-left: 0px !important;
+}
+.sidenav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding-bottom: 35px !important;
+    transition: all .2s  ease-in-out;
+}
+.sidenav ul li{
+    list-style: none !important;
+    display: inline !important;
+    margin: 0px auto !important;
+    padding: 34px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+    border-right: 1px solid lightgray !important;
+}
+.sidenav ul li:nth-child(6) a{
+    margin: 0px auto !important;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    transition: 0.3s;
+    border-bottom: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+}
+
+.sidenav ul li:hover{
+    transition: all .2s  ease-in-out;
+    border-bottom: 5px solid #000 !important;
+}
+.sidenav li:nth-child(6):hover{
+    border-bottom: 0px solid transparent !important;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+@media (max-width:992px){
+    #navbar{
+        top: 50px !important;
+        left: 50px !important;
+        z-index: 1;
+    }
+    .sidenav ul li a{
+        font-size: 15px;
+        padding-bottom: 30px !important;
+        transition: all .2s  ease-in-out;
+    }
+    .sidenav ul li{
+        list-style: none !important;
+        display: inline !important;
+        margin: 0px auto !important;
+        padding: 34px 30px;
+    }
+}
+
+
+@media (max-width:765px){
+    #navbar{
+        position: relative;
+        top: 0px !important;
+        left: 0px !important;
+        z-index: 1;
+        height: max-content !important;
+    }
+    .inlineelements{
+        width: 100vw;
+    }
+    .inlineelements .setitem img{
+        font-size: 1.5rem !important; 
+        border: 0px !important;
+        padding: 34px 40px !important;
+    }
+    .inlineelements .setitem{
+        margin: auto 0px !important;
+        cursor: pointer;
+        padding: 0px 40px !important;
+    }
+    .sidenav ul li a{
+        font-size: 15px;
+        padding-bottom: 30px !important;
+        transition: all .2s  ease-in-out;
+    }
+    .sidenav ul{
+        width: 100vw;
+    }
+    .sidenav ul li{
+        list-style: none !important;
+        display: block !important;
+        margin: 0px auto !important;
+        padding: 10px 30px;
+        text-align: center;
+        border: 0px solid transparent;
+    }
+    .sidenav{
+        position: absolute;
+        top: 85px;
+        width: 100vw !important;
+        height: 300px !important;
+        transition: 0.5s;
+        display: block;
+        opacity: 0;
+    }
+}
+
+
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
